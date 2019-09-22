@@ -1,4 +1,4 @@
-from anki.langs import _
+from anki.lang import _
 from aqt.addcards import AddCards
 from aqt.editor import Editor
 from aqt.utils import askUser
