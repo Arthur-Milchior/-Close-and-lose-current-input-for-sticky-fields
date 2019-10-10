@@ -1,24 +1,24 @@
 # "Close and lose current input ?" for sticky fields
 ## Rationale
 If you try to close the "add card" window, and you have some content,
-anki warns you and check whether you really want to cloze the window.
+Anki warns you and checks whether you really want to close the window.
 
-Except that it does not takes into accont content in the sticky
-fields. Probably because, in this case, the content may comes from the
+Except that it does not takes into accont content in sticky
+fields, probably because, in this case, the content may come from the
 last note, and it's not a problem if you lose it.
 
-I want anki to takes sticky fields into account; if the content
+I want Anki to take sticky fields into account; if the content
 changed since the last note, then I want to be warned. Otherwise, no
 trouble, just close the window.
 
-This is exactly what this add-on does; it warns if there is changed
-content if the sticky field.
+This is exactly what this add-on does: it warns if there is changed
+content in a sticky field.
 
 ## Warning
 This add-on is incompatible with add-on [46741504: Allows empty first
 field during adding and import](https://ankiweb.net/shared/info/46741504).
 ## Internal
-This add-on change the methods: 
+This add-on changes the methods: 
 * `aqt.addacrds.AddCards.__init__` and calls the previous method
 * `aqt.addacrds.AddCards.addNote` and calls the previous method
 * `aqt.addacrds.AddCards.ifCanClose`
