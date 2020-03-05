@@ -1,4 +1,6 @@
 # "Close and lose current input ?" for sticky fields
+This addon has been incorporated in anki 2.1.16. It is thus disabled for version 2.1.16 and above.
+
 ## Rationale
 If you try to close the "add card" window, and you have some content,
 anki warns you and check whether you really want to cloze the window.
